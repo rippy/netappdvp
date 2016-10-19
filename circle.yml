@@ -21,8 +21,7 @@ test:
     - echo "Skipping tests..."
   post:
     - echo "Copying build artificats..."
-    - ls *
-    - ls bin/*
-    - mv bin/netappdvp $CIRCLE_ARTIFACTS
+    - find / -type f -name netappdvp
+#    - mv bin/netappdvp $CIRCLE_ARTIFACTS
 
 
