@@ -21,7 +21,5 @@ test:
     - echo "Skipping tests..."
   post:
     - echo "Copying build artificats..."
-    - find / -type f -name netappdvp
-#    - mv bin/netappdvp $CIRCLE_ARTIFACTS
-
+    - mv /home/ubuntu/netappdvp/netappdvp $CIRCLE_ARTIFACTS
 
